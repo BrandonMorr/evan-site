@@ -9,15 +9,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Setup links -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,300,600">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
   <div class="container">
+
+    <div class="hero">
+      <img src="img/hero.gif" alt="">
+    </div>
 
     <!-- Nav -->
     <nav class="navbar">
@@ -25,7 +28,7 @@
         <ul class="navlist">
           <li class="navbar-item"><a href="#about">About</a></li>
           <li class="navbar-item"><a href="#music">Music</a></li>
-          <li class="navbar-logo"><a href="#start">EVAN MARTIN</a></li>
+          <li class="navbar-logo"><a href="index.html">EVAN MARTIN</a></li>
           <li class="navbar-item"><a href="#events">Events</a></li>
           <li class="navbar-item"><a href="#contact">Contact</a></li>
         </ul>
@@ -48,6 +51,7 @@
     <!-- Music section -->
     <div class="section" id="music">
       <h4 class="heading">Music</h4>
+      <iframe width="50%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/64440224&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
     </div>
 
     <!-- Events section -->
@@ -56,26 +60,26 @@
       <table class="u-full-width">
         <thead>
           <tr>
-            <th>Show</th>
-            <th>Date</th>
-            <th>Information</th>
+            <th class="center">Show</th>
+            <th class="center">Date</th>
+            <th class="right">Information</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>The thunder dome</td>
             <td>2017-01-20</td>
-            <td><a class="button button-primary" href="">view</a></td>
+            <td class="right"><a class="button button-primary view-more" href="">view</a></td>
           </tr>
           <tr>
             <td>Ur mommas house</td>
             <td>tonight</td>
-            <td><a class="button button-primary" href="">view</a></td>
+            <td class="right"><a class="button button-primary view-more" href="">view</a></td>
           </tr>
           <tr>
             <td>McDonalds</td>
             <td>2018-10-29</td>
-            <td><a class="button button-primary" href="">view</a></td>
+            <td class="right"><a class="button button-primary view-more" href="">view</a></td>
           </tr>
         </tbody>
       </table>
@@ -86,7 +90,7 @@
       <h4 class="heading">Contact</h4>
       <p>Please feel free to reach out if you want me to play at your next orgy.</p>
       <form>
-        <div class="row">
+        <div class="row form-control">
           <div class="six columns">
             <label for="name">Name</label>
             <input class="u-full-width" type="text" id="name">
@@ -96,13 +100,18 @@
             <input class="u-full-width" type="email" id="email">
           </div>
         </div>
-        <label for="message">Message</label>
-        <textarea class="u-full-width" id="message" style="resize: none"></textarea>
-        <input class="button-primary right" type="submit" value="Submit">
+        <div class="row form-control">
+          <label for="message">Message</label>
+          <textarea class="u-full-width" id="message" style="resize: none"></textarea>
+        </div>
+        <div class="row form-control">
+          <input class="button-primary right" type="submit" value="Submit">
+        </div>
       </form>
     </div>
   </div>
   <!-- Scripts -->
   <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
