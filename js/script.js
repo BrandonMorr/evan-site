@@ -1,7 +1,17 @@
 /* Scripts to do some cool stuff */
 
 $(document).ready(function() {
-  // smooth scrolling.
+
+  /**
+   * Component initialization.
+   */
+  $('.collapsible').collapsible();
+  $('.parallax').parallax();
+
+
+  /**
+   * Smooth scrolling to anchor.
+   */
   $('a[href*="#"]:not([href="#"])').click(function() {
 
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -17,21 +27,24 @@ $(document).ready(function() {
     }
   });
 
-  // hover effect
-  $(".navbar-item").hover(
-    function() {
-      $(this).css({ borderBottomWidth: "3px"});
-  }, function() {
-    $(this).css({ borderBottomWidth: "0px"});
-  });
+  /**
+   * Hero setup.
+   */
+  $('.parallax-container').css(
+    { height: $(window).innerHeight() - 63 }
+  );
 
-  // navbar functionality
+  /**
+   * Navbar functionality.
+   */
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 900) {
-      $(".navbar").addClass("navbar-fixed");
+    console.log($(window).scrollTop());
+    if ($(window).scrollTop() > 825) {
+      $(".navbar-fixed").show();
     }
-    if ($(window).scrollTop() < 899) {
-      $(".navbar").removeClass("navbar-fixed");
+
+    if ($(window).scrollTop() < 824) {
+      $(".navbar-fixed").hide();
     }
   });
 });
