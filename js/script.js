@@ -1,5 +1,8 @@
 /* Scripts to do some cool stuff */
 
+// Determine when to switch to fixed navbar
+var navPosition = $(window).innerHeight() - 64;
+
 $(document).ready(function() {
 
   /**
@@ -7,7 +10,6 @@ $(document).ready(function() {
    */
   $('.collapsible').collapsible();
   $('.parallax').parallax();
-
 
   /**
    * Smooth scrolling to anchor.
@@ -38,12 +40,11 @@ $(document).ready(function() {
    * Navbar functionality.
    */
   $(window).scroll(function () {
-    console.log($(window).scrollTop());
-    if ($(window).scrollTop() > 825) {
+    if ($(window).scrollTop() > navPosition) {
       $(".navbar-fixed").show();
     }
 
-    if ($(window).scrollTop() < 824) {
+    if ($(window).scrollTop() < (navPosition - 1)) {
       $(".navbar-fixed").hide();
     }
   });
