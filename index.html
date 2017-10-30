@@ -1,204 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Base site stuff -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Evan Martin</title>
+  <title>Evan Allan</title>
   <meta name="description" content="Evan Martin, professional person who plays with himself">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Setup links -->
   <link rel="icon" type="image/png" href="img/favicon.png">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="lib/materialize/css/materialize.min.css"/>
   <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-  <!-- Hero -->
-  <div class="parallax-container">
-    <div class="parallax"><img src="img/hero.gif" alt="Uh oh, something ain't right..."></div>
-  </div>
+  <div class="area">
 
-  <!-- Nav -->
-  <nav class="navbar grey darken-4">
-    <div class="nav-content">
-      <a href="index.html" class="brand-logo center">Evan Martin</a>
-      <ul class="nav-content">
-        <li class="tab left"><a href="#about">About</a></li>
-        <li class="left"><a href="#music">Music</a></li>
-        <li class="right"><a href="#events">Events</a></li>
-        <li class="right"><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+  </div>
+  <nav class="main-menu">
+    <ul>
+      <li class="nav-logo">
+          <img src="img/logo.png">
+      </li>
+
+      <li class="nav-btn">
+        <a href="#">
+          <i class="fa fa-male"></i>
+          <span class="nav-text">ABOUT ME</span>
+        </a>
+      </li>
+
+      <li class="nav-btn">
+        <a href="#">
+          <i class="fa fa-camera-retro"></i>
+          <span class="nav-text">MEDIA</span>
+        </a>
+      </li>
+
+      <li class="nav-btn">
+        <a href="#">
+          <i class="fa fa-calendar"></i>
+          <span class="nav-text">EVENTS</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="logout">
+      <li class="nav-btn">
+        <a href="#">
+          <i class="fa fa-music"></i>
+          <span class="nav-text">MUSIC</span>
+        </a>
+      </li>
+    </ul>
   </nav>
-
-  <!-- Fixed Nav -->
-  <div class="navbar-fixed" hidden="true">
-    <nav class="navbar grey darken-4">
-      <div class="nav-content">
-        <a href="index.html" class="brand-logo center">Evan Martin</a>
-        <ul class="nav-content">
-          <li class="tab left"><a href="#about">About</a></li>
-          <li class="left"><a href="#music">Music</a></li>
-          <li class="right"><a href="#events">Events</a></li>
-          <li class="right"><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-
-  <div class="container">
-    <!-- About section -->
-    <div class="section" id="about">
-      <h4 class="heading">About</h4>
-      <div class="divider"></div>
-      <div class="section">
-        <div class="row">
-          <div class="col s4 offset-s1">
-            <img height="75%" width="75%" class="circle responsive-img hoverable" src="img/about.png" alt="Uh oh, something ain't right...">
-          </div>
-          <div class="col s6">
-            <p>Does the vet perceive a warp? The antidote tools a derivative leak. The labelled realm plates our vote across the arch fan.
-              A representative collapses? Should the proven outcry heel the incentive manifesto? The opposed vacuum works behind a stiff.</p>
-          </div>
-      </div>
-      </div>
-    </div>
-
-    <!-- Music section -->
-    <div class="section" id="music">
-      <h4 class="heading">Music</h4>
-      <div class="divider"></div>
-      <div class="row">
-        <div class="col s12">
-          <p>Care to sample some of my tunes? Give me a listen</p>
-        </div>
-      </div>
-      <div class="section">
-        <div class="row">
-          <div class="col s8 offset-s2">
-            <div class="card hoverable">
-              <div class="card-image">
-                <iframe width="100%" height="300px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/64440224&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-              </div>
-              <div class="card-content">
-                <p>Here you can listen to some sweet tunes</p>
-              </div>
-              <div class="card-action">
-                <a href="">Hear more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Events section -->
-    <div class="section" id="events">
-      <h4 class="heading">Events</h4>
-      <div class="divider"></div>
-      <div class="row">
-        <div class="col s12">
-          <p>Here you can find a list of my upcoming and past events</p>
-        </div>
-      </div>
-      <div class="section">
-        <ul class="collapsible popout" data-collapsible="expandable">
-          <li>
-            <div class="collapsible-header"><i class="material-icons">filter_drama</i>The Thunder Dome</div>
-            <div class="collapsible-body">
-              <span>These are some words</span>
-              <button class="btn waves-effect waves-light  teal darken-1  right" type="submit" name="action">View
-                <i class="material-icons right">info</i>
-              </button>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header"><i class="material-icons">place</i>McDonalds</div>
-            <div class="collapsible-body">
-              <span>These are some words</span>
-              <button class="btn waves-effect waves-light  teal darken-1  right" type="submit" name="action">View
-                <i class="material-icons right">info</i>
-              </button>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header"><i class="material-icons">whatshot</i>The Tilda House</div>
-            <div class="collapsible-body">
-              <span>These are some words</span>
-              <button class="btn waves-effect waves-light  teal darken-1  right" type="submit" name="action">View
-                <i class="material-icons right">info</i>
-              </button>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Contact section -->
-    <div class="section" id="contact">
-      <h4 class="heading">Contact</h4>
-      <p>Please feel free to reach out if you want me to play at your next orgy.</p>
-      <div class="section">
-        <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s6">
-                  <input id="name" type="text" class="validate">
-                  <label for="name">First Name</label>
-                </div>
-                <div class="input-field col s6">
-                  <input id="email" type="email" class="validate" >
-                  <label for="email">Email</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <textarea id="message" maxlength="3000" class="materialize-textarea"></textarea>
-                  <label for="message">Message</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <a class="btn waves-effect waves-light grey lighten-3 black-text right" onclick="Materialize.toast('Sent! I'll get back you as soon as I can', 4000)">Send
-                    <i class="material-icons right">send</i>
-                  </a>
-                </div>
-              </div>
-            </form>
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="page-footer grey darken-4">
-    <div class="container">
-      <div class="row">
-        <div class="col l4 s12">
-          <p class="grey-text text-lighten-4">job@blow.me</p>
-        </div>
-        <div class="col l4 s12 center-align">
-          <p class="grey-text text-lighten-4">maybe a link here?</p>
-        </div>
-        <div class="col l4 s12 right-align">
-          <p class="grey-text text-lighten-4">maybe a logo here?</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      &copy; Evan Martin
-      <a class="grey-text text-lighten-4 right" href="brandonmorrissey.me">brandonmorrissey.me <i class="fa fa-heart red-text"></i></a>
-      </div>
-    </div>
-  </footer>
 
   <!-- Scripts -->
   <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
