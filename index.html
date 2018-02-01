@@ -15,46 +15,71 @@
 </head>
 
 <body>
-  <div class="area">
-
-  </div>
   <nav class="main-menu">
     <ul>
       <li class="nav-logo">
           <img src="img/logo.png">
       </li>
 
-      <li class="nav-btn">
-        <a href="#">
-          <i class="fa fa-male"></i>
-          <span class="nav-text">ABOUT ME</span>
-        </a>
+      <li id="about-btn" class="nav-btn">
+        <i class="fa fa-male"></i>
+        <span class="nav-text">ABOUT ME</span>
       </li>
 
-      <li class="nav-btn">
-        <a href="#">
-          <i class="fa fa-camera-retro"></i>
-          <span class="nav-text">MEDIA</span>
-        </a>
+      <li id="media-btn" class="nav-btn">
+        <i class="fa fa-camera-retro"></i>
+        <span class="nav-text">MEDIA</span>
       </li>
 
-      <li class="nav-btn">
-        <a href="#">
-          <i class="fa fa-calendar"></i>
-          <span class="nav-text">EVENTS</span>
-        </a>
+      <li id="events-btn" class="nav-btn">
+        <i class="fa fa-calendar"></i>
+        <span class="nav-text">EVENTS</span>
       </li>
     </ul>
 
-    <ul class="logout">
+    <ul id="player-btn" class="player">
       <li class="nav-btn">
-        <a href="#">
-          <i class="fa fa-music"></i>
-          <span class="nav-text">MUSIC</span>
-        </a>
+        <i class="fa fa-music"></i>
+        <span class="nav-text">MUSIC</span>
       </li>
     </ul>
   </nav>
+
+  <div id="about" class="panel">
+    <div class="container">
+      <div>
+        <h1>Evan Allan</h1>
+      </div>
+      <div class="content">
+        <p>
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+        <img src="img/about.png" alt="Oops, this image is missing">
+      </div>
+    </div>
+  </div>
+
+  <div id="media" class="panel">
+    <div class="container">
+      <div>
+        <h1>Media</h1>
+      </div>
+      <div class="content">
+        some sort of paginator will go here
+      </div>
+    </div>
+  </div>
+
+  <div id="events" class="panel">
+    <div class="container">
+      <div>
+        <h1>Events</h1>
+      </div>
+      <div class="content">
+        some sort of table will go here
+      </div>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
