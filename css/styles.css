@@ -3,17 +3,20 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
 
+/* Element styles */
 * {
   text-decoration: none;
 }
 
-li {
-  transition: background 0.2s ease-in-out;
-}
-
 body {
   background-image: url("../img/bg.png");
+  background-color: rgba(255, 255, 255, 0.9);
   background-size: cover;
+  overflow: hidden;
+}
+
+li {
+  transition: background 0.2s ease-in-out;
 }
 
 nav {
@@ -30,6 +33,7 @@ nav ul, nav li {
   padding: 0;
 }
 
+/* Navbar styles */
 .fa {
   padding: 10px;
   position: relative;
@@ -54,9 +58,13 @@ nav ul, nav li {
   z-index: 1000;
 }
 
-.main-menu .nav-logo img{
+.logo {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.logo img {
   position: relative;
-  margin-top: -20px;
   width: 75px;
   height: 65px;
 }
@@ -121,6 +129,12 @@ nav ul, nav li {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
   color: #ffffff;
+  overflow: auto;
+}
+
+.label {
+  font-size: 3em;
+  letter-spacing: 0.1em;
 }
 
 /* About section styles */
@@ -129,11 +143,6 @@ nav ul, nav li {
   background: -webkit-linear-gradient(to bottom, rgba(117,58,136,0.6), rgba(204,43,94,0.6));
   background: linear-gradient(to bottom, rgba(117,58,136,0.9), rgba(204,43,94,0.9));
   font-family: 'Titillium Web', sans-serif;
-}
-
-#about h1 {
-  font-size: 3em;
-  letter-spacing: 0.1em;
 }
 
 #about p {
@@ -146,7 +155,7 @@ nav ul, nav li {
 #about img {
   width: 25%;
   height: 25%;
-  margin-top: 5em;
+  margin-top: 3em;
   margin-right: 2.5em;
   float: right;
   border-radius: 3px;
@@ -162,15 +171,38 @@ nav ul, nav li {
   font-family: 'Titillium Web', sans-serif;
 }
 
-#media h1 {
-  font-size: 3em;
-  letter-spacing: 0.1em;
+#media img {
+  border-radius: 3px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin: 20px;
 }
 
-#media p {
-  width: 100%;
-  font-size: 2em;
-  text-align: center;
+#media #img-1 {
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+
+#media #img-2 {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  float: right;
+  margin-right: 150px;
+}
+
+#media #img-3 {
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+
+#media #img-4 {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  float: right;
+  margin-right: 150px;
 }
 
 /* Events section styles */
@@ -181,13 +213,91 @@ nav ul, nav li {
   font-family: 'Titillium Web', sans-serif;
 }
 
-#events h1 {
-  font-size: 3em;
-  letter-spacing: 0.1em;
+#events h3 {
+  width: 100%;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 100px;
 }
 
-#events p {
+#events i {
   width: 100%;
-  font-size: 2em;
+  font-size: 5em;
   text-align: center;
+}
+
+/* Contact section styles */
+#contact {
+  background: rgba(204,43,94, 0.6);
+  background: -webkit-linear-gradient(to bottom, rgba(117,58,136,0.6), rgba(204,43,94,0.6));
+  background: linear-gradient(to bottom, rgba(117,58,136,0.9), rgba(204,43,94,0.9));
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#contact h3 {
+  width: 100%;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#contact i {
+  width: 100%;
+  font-size: 5em;
+  text-align: center;
+}
+
+/* Player */
+.player-panel {
+  position: absolute;
+  width: 95%;
+  height: 90px;
+  bottom: -100%;
+  right: 0;
+}
+
+.player-container {
+  width: 75%;
+  height: 75%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+}
+
+#player {
+  background: rgba(204,43,94, 0.6);
+  background: -webkit-linear-gradient(to left, rgba(117,58,136,0.6), rgba(204,43,94,0.6));
+  background: linear-gradient(to left, rgba(117,58,136,0.9), rgba(204,43,94,0.9));
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#player h3 {
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+#player i {
+  font-size: 1.25em;
+}
+
+/* Custom Scrollbar stuff */
+.container::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0);
+}
+
+.container::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: rgba(0,0,0,0);
+}
+
+.container::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+	background-color: #ffffff;
 }

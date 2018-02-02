@@ -15,15 +15,16 @@
 </head>
 
 <body>
+  <!-- SIDEBAR NAV -->
   <nav class="main-menu">
-    <ul>
-      <li class="nav-logo">
-          <img src="img/logo.png">
-      </li>
+    <div class="logo">
+      <img src="img/logo.png">
+    </div>
 
+    <ul>
       <li id="about-btn" class="nav-btn">
-        <i class="fa fa-male"></i>
-        <span class="nav-text">ABOUT ME</span>
+        <i class="fa fa-child"></i>
+        <span class="nav-text">ABOUT</span>
       </li>
 
       <li id="media-btn" class="nav-btn">
@@ -35,6 +36,11 @@
         <i class="fa fa-calendar"></i>
         <span class="nav-text">EVENTS</span>
       </li>
+
+      <li id="contact-btn" class="nav-btn">
+        <i class="fa fa-envelope-o"></i>
+        <span class="nav-text">CONTACT</span>
+      </li>
     </ul>
 
     <ul id="player-btn" class="player">
@@ -45,39 +51,68 @@
     </ul>
   </nav>
 
+  <!-- ABOUT PANEL -->
   <div id="about" class="panel">
     <div class="container">
       <div>
-        <h1>Evan Allan</h1>
+        <h1 class="label">Evan Allan</h1>
       </div>
       <div class="content">
         <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+          Evan​ ​Allan​ ​is​ ​an​ ​emotionally​ ​provocative​ ​singer​ ​songwriter​ ​from​ ​Charlottetown,​ ​Prince Edward​ ​Island.​ ​Featuring​ ​energetic​ ​acoustic ​pop​ ​melodies​ ​paired​ ​with​ ​agile​ ​vocals,​ ​his dynamic​ ​range​ ​and​ ​lyricism​ ​can​ ​animate​ ​the​ ​dance​ ​floor​ ​only​ ​to​ ​bring​ ​it​ ​down​ ​to​ ​a​ ​whisper so​ ​you’re​ ​left​ ​with​ ​a​ ​smile​ ​and​ ​lump​ ​in​ ​your​ ​throat.​ ​He​ ​brings​ ​an​ ​anthology​ ​of​ ​personal experiences​ ​to​ ​life​ ​with​ ​clean​ ​tones​ ​and​ ​lyrics​ ​you​ ​might​ ​catch​ ​yourself​ ​singing​ ​in​ ​the shower.​ ​The​ ​songwriter​ ​has​ ​performed​ ​as​ ​a​ ​solo​ ​act​ ​and​ ​with​ ​his​ ​self​ ​titled​ ​band,​ ​drawing from​ ​influences​ ​like​ ​Gavin​ ​James​ ​and​ ​City​ ​and​ ​Colour.​ ​He’s​ diving ​head​ ​first​ ​into​ ​writing​ ​a demo​ ​release​ ​and​ ​a​ ​brand​ ​new​ ​wave​ ​of​ ​performance​ ​material.​ ​He’s​ ​got​ ​great​ ​things​ ​on​ ​the horizon​ ​but​ ​don’t​ ​take​ ​our​ ​word​ ​for​ ​it.​ ​Check​ ​him​ ​out!
         </p>
         <img src="img/about.png" alt="Oops, this image is missing">
       </div>
     </div>
   </div>
 
+  <!-- MEDIA PANEL -->
   <div id="media" class="panel">
     <div class="container">
       <div>
-        <h1>Media</h1>
+        <h1 class="label">Media</h1>
       </div>
       <div class="content">
-        some sort of paginator will go here
+        <img id="img-1" src="img/media-1.png" alt="Uh ohz, the image couldn't be found...">
+        <img id="img-2" src="img/media-2.png" alt="Uh ohz, the image couldn't be found...">
+        <img id="img-3" src="img/media-3.png" alt="Uh ohz, the image couldn't be found...">
+        <img id="img-4" src="img/media-4.png" alt="Uh ohz, the image couldn't be found...">
       </div>
     </div>
   </div>
 
+  <!-- EVENTS PANEL -->
   <div id="events" class="panel">
     <div class="container">
       <div>
-        <h1>Events</h1>
+        <h1 class="label">Events</h1>
       </div>
       <div class="content">
-        some sort of table will go here
+        <div class="content">
+          <h3>Check back for events!</h3>
+          <i class="fa fa-clock-o"></i>
+        </div>
       </div>
+    </div>
+  </div>
+
+  <!-- CONTACT PANEL -->
+  <div id="contact" class="panel">
+    <div class="container">
+      <div>
+        <h1 class="label">Contact Information</h1>
+      </div>
+      <div class="content">
+        <h3>Oh dear, there's no contact info yet...</h3>
+        <i class="fa fa-frown-o"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- MUSIC PLAYER -->
+  <div id="player" class="player-panel">
+    <div class="player-container">
+      <h3>Music player coming soon<i class="fa fa-heart"></i></h3>
     </div>
   </div>
 
