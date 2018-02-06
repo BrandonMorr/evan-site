@@ -12,7 +12,11 @@ body {
   background-image: url("../img/bg.png");
   background-color: rgba(255, 255, 255, 0.9);
   background-size: cover;
+  background-position: -10px -10px;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
   overflow: hidden;
+  transition: transform .5s ease-out;
 }
 
 li {
@@ -31,6 +35,48 @@ nav ul, nav li {
   outline: 0;
   margin: 50px 0;
   padding: 0;
+}
+
+/* Landing styles */
+.landing {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
+  opacity: 0.9;
+}
+
+.landing-container {
+  width: 75%;
+  height: 75%;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.landing-container h1 {
+  font-size: 5em;
+  letter-spacing: 10px;
+}
+
+.landing-container h3 {
+  width: 40%;
+  height: 6%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #fff;
+  outline: none;
+  letter-spacing: 5px;
+  font-size: 2em;
 }
 
 /* Navbar styles */
@@ -55,22 +101,11 @@ nav ul, nav li {
   height: 100%;
   width: 5%;
   overflow: hidden;
-  z-index: 1000;
-}
-
-.logo {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.logo img {
-  position: relative;
-  width: 75px;
-  height: 65px;
+  z-index: 1;
 }
 
 .main-menu>ul {
-  margin: 25px 0;
+  margin: 0;
   text-align: center;
 }
 
@@ -99,10 +134,11 @@ nav ul, nav li {
   font-family: 'Titillium Web', sans-serif;
 }
 
-.main-menu>ul.player {
+.player {
   position: absolute;
   left: 0;
   bottom: 0;
+  margin-top: 10px;
 }
 
 .main-menu li:hover {
@@ -155,7 +191,6 @@ nav ul, nav li {
 #about img {
   width: 25%;
   height: 25%;
-  margin-top: 3em;
   margin-right: 2.5em;
   float: right;
   border-radius: 3px;

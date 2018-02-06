@@ -1,48 +1,49 @@
 $(document).ready(function() {
-  $('#about-btn').click(function() {
-    if ($('#about').attr('clicked') == 1) {
-      $('#about').animate({ left: '-100%' }, 500);
-      $('#about').animate({ left: '-100%' }, 500);
-      $('#about').attr('clicked', 0);
-    } else {
-      $('#about').animate({ left: '5%' }, 500);
-      $('#about').attr('clicked', 1);
-    }
-  });
-  $('#media-btn').click(function() {
-    if ($('#media').attr('clicked') == 1) {
-      $('#media').animate({ left: '-100%' }, 500);
-      $('#media').attr('clicked', 0);
-    } else {
-      $('#media').animate({ left: '5%' }, 500);
-      $('#media').attr('clicked', 1);
-    }
-  });
-  $('#events-btn').click(function() {
-    if ($('#events').attr('clicked') == 1) {
-      $('#events').animate({ left: '-100%' }, 500);
-      $('#events').attr('clicked', 0);
-    } else {
-      $('#events').animate({ left: '5%' }, 500);
-      $('#events').attr('clicked', 1);
-    }
-  });
-  $('#contact-btn').click(function() {
-    if ($('#contact').attr('clicked') == 1) {
-      $('#contact').animate({ left: '-100%' }, 500);
-      $('#contact').attr('clicked', 0);
-    } else {
-      $('#contact').animate({ left: '5%' }, 500);
-      $('#contact').attr('clicked', 1);
-    }
-  });
-  $('#player-btn').click(function() {
-    if ($('#player').attr('clicked') == 1) {
-      $('#player').animate({ bottom: '-10%' }, 250);
-      $('#player').attr('clicked', 0);
-    } else {
-      $('#player').animate({ bottom: '0' }, 250);
-      $('#player').attr('clicked', 1);
-    }
-  });
+  /**
+   * Panel sliding.
+   */
+  var btns = [$('#about-btn'), $('#media-btn'), $('#events-btn'), $('#contact-btn'), $('#player-btn')];
+
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].click(
+      // now we do ze sliding
+      function() {
+        // each button has a 'panel' attribute to correspond to a panel
+        var panel = $(`${$(this).attr('panel')}`);
+
+        // if player button use alternate animation
+        if (panel.attr('id') == 'player') {
+          // do the player animation
+          if ($(panel).attr('clicked') == 1) {
+            $(panel).animate({ bottom: '-10%' }, 250);
+            $(panel).attr('clicked', 0);
+          } else {
+            $(panel).animate({ bottom: '0' }, 250);
+            $(panel).attr('clicked', 1);
+          }
+        } else {
+          // otherwise do the panel animation
+          if ($(panel).attr('clicked') == 1) {
+            $(panel).animate({ left: '-100%' }, 500);
+            $(panel).attr('clicked', 0);
+          } else {
+            $(panel).animate({ left: '5%' }, 500);
+            $(panel).attr('clicked', 1);
+          }
+        }
+      }
+    );
+  }
+
+  /**
+   * Landing page.
+   */
+   $('.landing').click(function() {
+     $(this).fadeOut('fast', function() {
+       $(this).css({
+         'z-index':'0',
+         'display':'none'
+       });
+     })
+   });
 });
